@@ -5,10 +5,10 @@
 # name = "uchenna"
 # print (name) 
 
-print ("The best school in the world is Havard University")
+# print ("The best school in the world is Havard University")
 
-school = "UNILAG is the best institute of learning in nigeria"
-print (school)
+# school = "UNILAG is the best institute of learning in nigeria"
+# print (school)
 
 
 # 1. Write a script that creates the two variables, num1 and num2. Both
@@ -34,7 +34,7 @@ print (school)
 # 1.2 to the power of 3 = 1.7279999999999998
 
 
-# #1
+#1
 # num1 = 25000000
 # num2 = 25_000_000
 # print(num1)
@@ -73,9 +73,8 @@ print (school)
 # The output should look like 20%.
 
 
-# 1. print ()
 
-
+print(f"{3 ** .125:.3f}")
 
 
 # 1. Write a function called cube() with one number parameter and returns
@@ -122,8 +121,43 @@ print (school)
 # print(f"The absolute value of {lee} is {abs(float(lee))}")
 
 
-entry = input ("Enter a number")
-entry2 = input("Enter another number")
+# entry = input ("Enter a number")
+# entry2 = input("Enter another number")
 
-print(f"the difference between {entry} and {entry2} is an integer? {float(entry) - float(entry2) % 1 == 0}")
+# print(f"the difference between {entry} and {entry2} is an integer? {float(entry) - float(entry2) % 1 == 0}")
 
+
+
+# 1. convert_cel_to_far() which takes one float parameter representing
+# degrees Celsius and returns a float representing the same temperature
+# in degrees Fahrenheit using the following formula:
+# F = C * 9/5 + 32
+# 2. convert_far_to_cel() which take one float parameter representing
+# degrees Fahrenheit and returns a float representing the same temperature
+# in degrees Celsius using the following formula:
+# C = (F - 32) * 5/9
+# The script should first prompt the user to enter a temperature in degrees
+# Fahrenheit and then display the temperature converted to Celsius.
+# Then prompt the user to enter a temperature in degrees Celsius and
+# display the temperature converted to Fahrenheit.
+# All converted temperatures should be rounded to 2 decimal places.
+# Here’s a sample run of the program:
+# Enter a temperature in degrees F: 72
+# 72 degrees F = 22.22 degrees C
+# Enter a temperature in degrees C: 37
+# 37 degrees C = 98.60 degrees F
+
+
+def convert_cel_to_far(celcius):
+    return celcius * 9/5 + 32
+celcius = float(input("Enter a temperature in degrees C: "))
+# fahrenheit = convert_cel_to_far(celcius)
+print(f"{celcius} degrees C = {fahrenheit:.2f} degrees F")
+
+
+
+# def convert_far_to_cel(fahrenheit):
+#     return (fahrenheit - 32) * 5/9
+# fahrenheit = float(input("Enter a temperature in degrees F:"))
+# celcius = convert_far_to_cel(fahrenheit)
+# print(f"{fahrenheit} degrees F = {celcius:.2f} degrees C")
