@@ -11,27 +11,27 @@
 # print (school)
 
 
-# # 1. Write a script that creates the two variables, num1 and num2. Both
-# # num1 and num2 should be assigned the integer literal 25,000,000,
-# # one written with underscored and one without. Print num1 and num2
-# # on two separate lines.
+# 1. Write a script that creates the two variables, num1 and num2. Both
+# num1 and num2 should be assigned the integer literal 25,000,000,
+# one written with underscored and one without. Print num1 and num2
+# on two separate lines.
 
-# # 2. Write a script that assigns the floating-point literal 175000.0 to the
-# # variable num using exponential notation, and then prints num in the
-# # interactive window.
+# 2. Write a script that assigns the floating-point literal 175000.0 to the
+# variable num using exponential notation, and then prints num in the
+# interactive window.
 
-# # 3. In the interactive window, try and find the smallest exponent N so
-# # that 2e<N>, where <N> is replaced with your number, returns inf.
+# 3. In the interactive window, try and find the smallest exponent N so
+# that 2e<N>, where <N> is replaced with your number, returns inf.
 
 
-# #4. Write a script called exponent.py that receives two numbers from the
-# # user and displays the first number raised to the power of the second
-# # number.
-# # A sample run of the program should look like this (with example input
-# # that has been provided by the user included below):
-# # Enter a base: 1.2
-# # Enter an exponent: 3
-# # 1.2 to the power of 3 = 1.7279999999999998
+# 4. Write a script called exponent.py that receives two numbers from the
+# user and displays the first number raised to the power of the second
+# number.
+# A sample run of the program should look like this (with example input
+# that has been provided by the user included below):
+# Enter a base: 1.2
+# Enter an exponent: 3
+# 1.2 to the power of 3 = 1.7279999999999998
 
 
 # 1
@@ -191,3 +191,45 @@ index = 0
 while index < len(word):
     print(word[index])
 index = index + 1
+
+
+
+
+1. Write a for loop that prints out the integers 2 through 10, each on
+a new line, by using the range() function.
+2. Use a while loop that prints out the integers 2 through 10 (Hint:
+You’ll need to create a new integer first.)
+3. Write a function called doubles() that takes one number as its input
+and doubles that number. Then use the doubles() function in a
+loop to double the number 2 three times, displaying each result on
+a separate line. Here is some sample output:
+4
+8
+16
+
+
+
+
+In this challenge, you will write a program called invest.py that tracks
+the growing amount of an investment over time.
+An initial deposit, called the principal amount, is made. Each year,
+the amount increases by a fixed percentage, called the annual rate of
+return.
+For example, a principal amount of $100 with an annual rate of return
+of 5% increases the first year by $5. The second year, the increase is
+5% of the new amount $105, which is $5.25.
+Write a function called invest with three parameters: the principal
+amount, the annual rate of return, and the number of years to calculate.
+The function signature might look something like this:
+def invest(amount, rate, years):
+The function then prints out the amount of the investment, rounded
+to 2 decimal places, at the end of each year for the specified number
+of years.
+For example, calling invest(100, .05, 4) should print the following:
+year 1: $105.00
+year 2: $110.25
+year 3: $115.76
+year 4: $121.55
+To finish the program, prompt the user to enter an initial amount, an
+annual percentage rate, and a number of years. Then call invest() to
+display the calculations for the values entered by the user.
